@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T07:51:27.864Z",
+  "lastUpdated": "2026-03-05T16:15:09.755Z",
   "lastReset": "2026-03-05T07:49:05.992Z",
   "summary": {
     "total": 14,
@@ -12,126 +12,126 @@
       "name": "BSI Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "2633ms",
+      "latency": "1877ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:00.016Z"
+      "checkedAt": "2026-03-05T16:14:42.310Z"
     },
     {
       "id": "trbcaid",
       "name": "BCA Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "1756ms",
+      "latency": "2172ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:01.165Z"
+      "checkedAt": "2026-03-05T16:14:42.111Z"
     },
     {
       "id": "trmandiriid",
       "name": "Mandiri Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "1293ms",
+      "latency": "1934ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:00.986Z"
+      "checkedAt": "2026-03-05T16:14:41.188Z"
     },
     {
       "id": "trbniid",
       "name": "BNI Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "1761ms",
+      "latency": "1024ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:50:59.983Z"
+      "checkedAt": "2026-03-05T16:14:40.999Z"
     },
     {
       "id": "trbriid",
       "name": "BRI Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "1433ms",
+      "latency": "1940ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:12.111Z"
+      "checkedAt": "2026-03-05T16:14:52.470Z"
     },
     {
       "id": "trcimbid",
       "name": "CIMB Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "3978ms",
+      "latency": "1091ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:10.826Z"
+      "checkedAt": "2026-03-05T16:14:51.832Z"
     },
     {
       "id": "trpermataid",
       "name": "Permata Virtual Account",
       "category": "va",
       "status": "operational",
-      "latency": "1418ms",
+      "latency": "2996ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:12.157Z"
+      "checkedAt": "2026-03-05T16:14:54.396Z"
     },
     {
       "id": "trbluid",
       "name": "Blu by BCA Digital",
       "category": "e-wallet",
       "status": "operational",
-      "latency": "785ms",
+      "latency": "584ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:11.252Z"
+      "checkedAt": "2026-03-05T16:14:51.765Z"
     },
     {
       "id": "trgopayid",
       "name": "GoPay",
       "category": "e-wallet",
       "status": "operational",
-      "latency": "2188ms",
+      "latency": "1345ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:20.910Z"
+      "checkedAt": "2026-03-05T16:15:01.888Z"
     },
     {
       "id": "trshoppeeid",
       "name": "ShopeePay",
       "category": "e-wallet",
       "status": "operational",
-      "latency": "2158ms",
+      "latency": "2375ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:20.192Z"
+      "checkedAt": "2026-03-05T16:15:02.120Z"
     },
     {
       "id": "trovoid",
       "name": "OVO",
       "category": "e-wallet",
       "status": "operational",
-      "latency": "2276ms",
+      "latency": "3687ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:23.517Z"
+      "checkedAt": "2026-03-05T16:15:03.542Z"
     },
     {
       "id": "trdanaid",
       "name": "DANA",
       "category": "e-wallet",
       "status": "down",
-      "latency": "1569ms",
+      "latency": "1404ms",
       "uptime": "0%",
-      "checkedAt": "2026-03-05T07:51:24.510Z"
+      "checkedAt": "2026-03-05T16:15:04.041Z"
     },
     {
       "id": "trlinkajaid",
       "name": "LinkAja",
       "category": "e-wallet",
       "status": "operational",
-      "latency": "1243ms",
+      "latency": "2072ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:27.863Z"
+      "checkedAt": "2026-03-05T16:15:09.755Z"
     },
     {
       "id": "trlinkajasyariahid",
       "name": "LinkAja Syariah",
       "category": "e-wallet",
       "status": "operational",
-      "latency": "333ms",
+      "latency": "1252ms",
       "uptime": "100%",
-      "checkedAt": "2026-03-05T07:51:27.281Z"
+      "checkedAt": "2026-03-05T16:15:08.953Z"
     }
   ]
 }
