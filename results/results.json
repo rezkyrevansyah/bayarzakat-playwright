@@ -1,0 +1,137 @@
+{
+  "lastUpdated": "2026-03-05T07:01:11.157Z",
+  "lastReset": null,
+  "summary": {
+    "total": 14,
+    "passed": 9,
+    "failed": 1
+  },
+  "channels": [
+    {
+      "id": "trbsiid",
+      "name": "BSI Virtual Account",
+      "category": "va",
+      "status": "pending",
+      "latency": "-",
+      "uptime": "-",
+      "checkedAt": null
+    },
+    {
+      "id": "trbcaid",
+      "name": "BCA Virtual Account",
+      "category": "va",
+      "status": "pending",
+      "latency": "-",
+      "uptime": "-",
+      "checkedAt": null
+    },
+    {
+      "id": "trmandiriid",
+      "name": "Mandiri Virtual Account",
+      "category": "va",
+      "status": "pending",
+      "latency": "-",
+      "uptime": "-",
+      "checkedAt": null
+    },
+    {
+      "id": "trbniid",
+      "name": "BNI Virtual Account",
+      "category": "va",
+      "status": "pending",
+      "latency": "-",
+      "uptime": "-",
+      "checkedAt": null
+    },
+    {
+      "id": "trbriid",
+      "name": "BRI Virtual Account",
+      "category": "va",
+      "status": "operational",
+      "latency": "2661ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:00:49.903Z"
+    },
+    {
+      "id": "trcimbid",
+      "name": "CIMB Virtual Account",
+      "category": "va",
+      "status": "operational",
+      "latency": "2892ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:00:50.536Z"
+    },
+    {
+      "id": "trpermataid",
+      "name": "Permata Virtual Account",
+      "category": "va",
+      "status": "operational",
+      "latency": "3499ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:00:50.678Z"
+    },
+    {
+      "id": "trbluid",
+      "name": "Blu by BCA Digital",
+      "category": "e-wallet",
+      "status": "operational",
+      "latency": "1827ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:00:49.085Z"
+    },
+    {
+      "id": "trgopayid",
+      "name": "GoPay",
+      "category": "e-wallet",
+      "status": "operational",
+      "latency": "1414ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:00:59.312Z"
+    },
+    {
+      "id": "trshoppeeid",
+      "name": "ShopeePay",
+      "category": "e-wallet",
+      "status": "operational",
+      "latency": "2374ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:01:03.568Z"
+    },
+    {
+      "id": "trovoid",
+      "name": "OVO",
+      "category": "e-wallet",
+      "status": "operational",
+      "latency": "1302ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:01:02.505Z"
+    },
+    {
+      "id": "trdanaid",
+      "name": "DANA",
+      "category": "e-wallet",
+      "status": "down",
+      "latency": "3841ms",
+      "uptime": "0%",
+      "checkedAt": "2026-03-05T07:01:06.593Z"
+    },
+    {
+      "id": "trlinkajaid",
+      "name": "LinkAja",
+      "category": "e-wallet",
+      "status": "operational",
+      "latency": "2053ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:01:09.710Z"
+    },
+    {
+      "id": "trlinkajasyariahid",
+      "name": "LinkAja Syariah",
+      "category": "e-wallet",
+      "status": "operational",
+      "latency": "1724ms",
+      "uptime": "100%",
+      "checkedAt": "2026-03-05T07:01:11.156Z"
+    }
+  ]
+}

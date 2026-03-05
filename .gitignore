@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright
+/test-results/
+/playwright-report/
+
+# results runtime files (lock files only; results.json must be in repo for Bitbucket pipeline)
+/results/.running
+/results/.write-lock

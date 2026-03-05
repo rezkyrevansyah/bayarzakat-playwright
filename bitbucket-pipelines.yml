@@ -1,0 +1,27 @@
+image: mcr.microsoft.com/playwright:v1.50.0-noble
+
+pipelines:
+  custom:
+    run-zakat-test:
+      - step:
+          name: Run Playwright Tests & Publish Results
+          caches:
+            - node
+          script:
+            # Install dependencies
+            - npm ci
+            # Run tests (Chromium already installed in image)
+            - npx playwright test --reporter=line
+            # Commit results.json back to repo so Vercel can read it
+            - git config user.email "pipeline@bitbucket.org"
+            - git config user.name "Bitbucket Pipeline"
+            - git add results/results.json
+            - git diff --cached --quiet && echo "No changes to commit" || git commit -m "chore: update test results [skip ci]"
+            - git push "https://x-token-auth:${BB_TOKEN}@bitbucket.org/${BB_WORKSPACE}/${BB_REPO_SLUG}.git" HEAD:main
+
+  branches:
+    main:
+      - step:
+          name: Skip auto-run (use custom pipeline only)
+          script:
+            - echo "Use custom pipeline 'run-zakat-test' to trigger tests manually."

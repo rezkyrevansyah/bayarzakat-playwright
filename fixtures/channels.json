@@ -1,0 +1,16 @@
+[
+  { "id": "trbsiid",            "name": "BSI Virtual Account",    "type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trbcaid",            "name": "BCA Virtual Account",    "type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trmandiriid",        "name": "Mandiri Virtual Account","type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trbniid",            "name": "BNI Virtual Account",    "type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trbriid",            "name": "BRI Virtual Account",    "type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trcimbid",           "name": "CIMB Virtual Account",   "type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trpermataid",        "name": "Permata Virtual Account","type": "iframe",   "target": "snap-midtrans",  "category": "va" },
+  { "id": "trbluid",            "name": "Blu by BCA Digital",     "type": "modal",    "target": "myModalblu",     "category": "e-wallet" },
+  { "id": "trgopayid",          "name": "GoPay",                  "type": "iframe",   "target": "snap-midtrans",  "category": "e-wallet" },
+  { "id": "trshoppeeid",        "name": "ShopeePay",              "type": "iframe",   "target": "snap-midtrans",  "category": "e-wallet" },
+  { "id": "trovoid",            "name": "OVO",                    "type": "modal",    "target": "myModalovo",     "category": "e-wallet" },
+  { "id": "trdanaid",           "name": "DANA",                   "type": "redirect", "target": "dana.id",        "category": "e-wallet" },
+  { "id": "trlinkajaid",        "name": "LinkAja",                "type": "modal",    "target": "myModallinkaja", "category": "e-wallet" },
+  { "id": "trlinkajasyariahid", "name": "LinkAja Syariah",        "type": "modal",    "target": "myModallinkaja", "category": "e-wallet" }
+]
