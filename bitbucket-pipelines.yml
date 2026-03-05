@@ -16,8 +16,8 @@ pipelines:
             - git config user.email bot@pipeline.local
             - git config user.name Pipeline-Bot
             - git add results/results.json
-            - git diff --cached --quiet && echo "No changes" || git commit -m "chore: update test results [skip ci]"
-            - git push "https://x-token-auth:${BB_TOKEN}@bitbucket.org/${BB_WORKSPACE}/${BB_REPO_SLUG}.git" HEAD:main
+            - 'git diff --cached --quiet && echo "No changes" || git commit -m "chore: update test results [skip ci]"'
+            - 'git push "https://x-token-auth:${BB_TOKEN}@bitbucket.org/${BB_WORKSPACE}/${BB_REPO_SLUG}.git" HEAD:main'
 
   branches:
     main:
