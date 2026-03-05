@@ -1,4 +1,4 @@
-image: mcr.microsoft.com/playwright:v1.50.0-noble
+image: mcr.microsoft.com/playwright:v1.58.2-noble
 
 pipelines:
   custom:
@@ -11,7 +11,8 @@ pipelines:
             # Install dependencies
             - npm ci
             # Run tests (Chromium already installed in image)
-            - npx playwright test --reporter=line
+            # || true: pipeline tetap lanjut meski ada test yang fail, hasil dicatat di results.json
+            - npx playwright test --reporter=line || true
             # Commit results.json back to repo so Vercel can read it
             - git config user.email bot@pipeline.local
             - git config user.name Pipeline-Bot
