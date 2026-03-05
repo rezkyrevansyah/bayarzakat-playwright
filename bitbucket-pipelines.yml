@@ -13,10 +13,10 @@ pipelines:
             # Run tests (Chromium already installed in image)
             - npx playwright test --reporter=line
             # Commit results.json back to repo so Vercel can read it
-            - git config user.email "iqag98bmuf0rn9k32yq1ln80drr6af@bots.bitbucket.org"
-            - git config user.name "Pipeline Bot"
+            - git config user.email bot@pipeline.local
+            - git config user.name Pipeline-Bot
             - git add results/results.json
-            - git diff --cached --quiet && echo "No changes to commit" || git commit -m "chore: update test results [skip ci]"
+            - git diff --cached --quiet && echo "No changes" || git commit -m "chore: update test results [skip ci]"
             - git push "https://x-token-auth:${BB_TOKEN}@bitbucket.org/${BB_WORKSPACE}/${BB_REPO_SLUG}.git" HEAD:main
 
   branches:
