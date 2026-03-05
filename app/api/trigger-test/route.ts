@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic';
 
 const BB_WORKSPACE = process.env.BB_WORKSPACE!;
 const BB_REPO_SLUG = process.env.BB_REPO_SLUG!;
-const BB_TOKEN = process.env.BB_TOKEN!; // Bitbucket App Password: user:app_password base64
+const BB_TOKEN = process.env.BB_TOKEN!; // Bitbucket Access Token (Bearer)
 
 export async function POST() {
   if (!BB_WORKSPACE || !BB_REPO_SLUG || !BB_TOKEN) {
@@ -30,7 +30,7 @@ export async function POST() {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Basic ${BB_TOKEN}`,
+      Authorization: `Bearer ${BB_TOKEN}`,
     },
     body: JSON.stringify(body),
   });

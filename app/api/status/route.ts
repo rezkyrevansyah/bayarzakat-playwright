@@ -36,7 +36,7 @@ export async function GET() {
 
   try {
     const res = await fetch(url, {
-      headers: { Authorization: `Basic ${BB_TOKEN}` },
+      headers: { Authorization: `Bearer ${BB_TOKEN}` },
       cache: 'no-store',
     });
 

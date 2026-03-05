@@ -46,7 +46,7 @@ export async function POST() {
   try {
     const res = await fetch(url, {
       method: 'POST',
-      headers: { Authorization: `Basic ${BB_TOKEN}` },
+      headers: { Authorization: `Bearer ${BB_TOKEN}` },
       body: form,
     });
 

@@ -19,7 +19,7 @@ export async function GET() {
 
   try {
     const res = await fetch(url, {
-      headers: { Authorization: `Basic ${BB_TOKEN}` },
+      headers: { Authorization: `Bearer ${BB_TOKEN}` },
       // No caching — always get fresh state
       cache: 'no-store',
     });
