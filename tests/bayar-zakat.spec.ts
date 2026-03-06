@@ -36,18 +36,27 @@ async function testChannel(
   const start = Date.now();
 
   try {
+    // Pasang popup listener SEBELUM klik channel untuk hindari race condition
+    const popupPromise = channel.type === 'redirect'
+      ? page.waitForEvent('popup', { timeout: 15000 })
+      : null;
+
     await page.locator(`#${channel.id}`).click();
 
     switch (channel.type) {
       case 'redirect': {
-        const [popup] = await Promise.all([
-          page.waitForEvent('popup', { timeout: 10000 }),
-          page.locator('#pay-button').click(),
-        ]);
-        await popup.waitForLoadState('domcontentloaded');
-        const url = popup.url();
-        const passed = url.includes(channel.target);
-        await popup.close();
+        await page.locator('#pay-button').click();
+        let passed = false;
+        try {
+          const popup = await popupPromise!;
+          await popup.waitForLoadState('domcontentloaded');
+          passed = popup.url().includes(channel.target);
+          await popup.close();
+        } catch {
+          // Fallback: beberapa env redirect di tab yang sama
+          await page.waitForURL(`**${channel.target}**`, { timeout: 8000 });
+          passed = page.url().includes(channel.target);
+        }
         return { status: passed ? 'operational' : 'down', latency: `${Date.now() - start}ms` };
       }
 
