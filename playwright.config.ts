@@ -5,14 +5,14 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 0,
-  workers: 4,
+  workers: process.env.CI ? 7 : 4,
   reporter: 'line',
-  timeout: 60000,
+  timeout: 30000,
   use: {
     headless: true,
     viewport: { width: 1280, height: 720 },
-    actionTimeout: 15000,
-    navigationTimeout: 30000,
+    actionTimeout: 10000,
+    navigationTimeout: 20000,
     ignoreHTTPSErrors: true,
   },
   projects: [

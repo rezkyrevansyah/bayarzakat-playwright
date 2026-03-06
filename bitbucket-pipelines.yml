@@ -9,6 +9,7 @@ pipelines:
             - node
           script:
             # Install dependencies
+            - export CI=true
             - npm ci
             # Run tests (Chromium already installed in image)
             # || true: pipeline tetap lanjut meski ada test yang fail, hasil dicatat di results.json

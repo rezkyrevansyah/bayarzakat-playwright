@@ -14,12 +14,11 @@ const BAZNAS_URL = 'https://bayarzakat.baznas.go.id/zakat';
 
 async function fillAndSubmitForm(page: Page): Promise<void> {
   await page.goto(BAZNAS_URL);
-  await page.waitForLoadState('domcontentloaded');
 
   await page.locator('#nominal').fill(FORM_DATA.nominal);
 
   // Nama donatur mungkin muncul setelah nominal diisi
-  await page.locator('#name').waitFor({ timeout: 10000 });
+  await page.locator('#name').waitFor({ timeout: 8000 });
   await page.locator('#name').fill(FORM_DATA.name);
   await page.locator('#handphone').fill(FORM_DATA.phone);
   await page.locator('#email').fill(FORM_DATA.email);
@@ -27,7 +26,7 @@ async function fillAndSubmitForm(page: Page): Promise<void> {
   await page.locator('#next-button').click();
 
   // Tunggu daftar payment channel muncul
-  await page.locator('.trpayment').first().waitFor({ timeout: 15000 });
+  await page.locator('.trpayment').first().waitFor({ timeout: 10000 });
 }
 
 async function testChannel(
@@ -42,7 +41,7 @@ async function testChannel(
     switch (channel.type) {
       case 'redirect': {
         const [popup] = await Promise.all([
-          page.waitForEvent('popup', { timeout: 15000 }),
+          page.waitForEvent('popup', { timeout: 10000 }),
           page.locator('#pay-button').click(),
         ]);
         await popup.waitForLoadState('domcontentloaded');
@@ -54,7 +53,7 @@ async function testChannel(
 
       case 'iframe': {
         await page.locator('#pay-button').click();
-        await expect(page.locator(`#${channel.target}`)).toBeVisible({ timeout: 20000 });
+        await expect(page.locator(`#${channel.target}`)).toBeVisible({ timeout: 15000 });
         return { status: 'operational', latency: `${Date.now() - start}ms` };
       }
 
