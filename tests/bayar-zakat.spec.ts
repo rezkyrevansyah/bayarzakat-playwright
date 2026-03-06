@@ -10,7 +10,7 @@ const FORM_DATA = {
   email: 'test@example.com',
 };
 
-const BAZNAS_URL = 'https://bayarzakat.baznas.go.id/zakat';
+const BAZNAS_URL = 'https://demo-bayarzakat.baznas.or.id/zakat';
 
 async function fillAndSubmitForm(page: Page): Promise<void> {
   await page.goto(BAZNAS_URL);
